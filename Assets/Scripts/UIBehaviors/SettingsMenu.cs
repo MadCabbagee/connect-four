@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SceneBehaviors
+namespace UIBehaviors
 {
     public class SettingsMenu : MonoBehaviour
     {

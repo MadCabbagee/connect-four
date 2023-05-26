@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace SceneBehaviors
+namespace UIBehaviors
 {
     public class LocalMultiplayerMenu : MonoBehaviour
     {
