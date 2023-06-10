@@ -4,10 +4,11 @@ namespace ChipScripts
 {
     public class ChipSelection : MonoBehaviour
     {
-        [SerializeField] public Transform chipIcon;
+            
+        public Transform chipIcon;
         private bool _isSelected = false;
 
-        public void OnMouseDown()
+        public void OnMouseUp()
         {
             Debug.Log("Mouse Down");
             _isSelected = !_isSelected;
