@@ -1,12 +1,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UIBehaviors;
+using MenuScripts;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace UIBehaviors
+namespace MenuScripts
 {
     public class OnlineMPMenu : MonoBehaviour
     {
@@ -30,6 +30,7 @@ namespace UIBehaviors
         public void BackButton_OnClick()
         {
             MainMenu.SwitchScene("MultiplayerMenuScene");
+            MainMenu.GameMode = GameMode.None;
         }
     
         public void RefreshButton_OnClick()
