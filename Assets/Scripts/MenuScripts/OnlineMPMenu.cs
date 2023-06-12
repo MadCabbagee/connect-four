@@ -53,7 +53,7 @@ namespace UIBehaviors
         private List<string> GetOnlineGamesList()
         {
             // todo: refresh the list by requesting the information from the server again via websocket and repopulating the list
-            throw new NotImplementedException();
+            return null;
         }
         
         public void HostButton_OnClick()
