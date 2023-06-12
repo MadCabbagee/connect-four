@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MultiPlayerMenuScene.unity
     guid: 305052d9e3ccc6b4f8dec769dbdd57ab
   - enabled: 1
-    path: Assets/Scenes/LocalMultiplayerMenuScene.unity
+    path: Assets/Scenes/PlayerSetupScene.unity
     guid: 960cb0a87638eaa49ac8c86dc07695d1
   - enabled: 1
     path: Assets/Scenes/OnlineMultiplayerMenuScene.unity
