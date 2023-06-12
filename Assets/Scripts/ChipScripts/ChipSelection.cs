@@ -8,7 +8,10 @@ namespace ChipScripts
         public Transform chipIcon;
         private bool _isSelected = false;
 
-        public void OnMouseUp()
+        /// <summary>
+        ///     Enlarges image to indicate this chip is selected.
+        /// </summary>
+        public void ToggleSelection()
         {
             Debug.Log("Mouse Down");
             _isSelected = !_isSelected;
