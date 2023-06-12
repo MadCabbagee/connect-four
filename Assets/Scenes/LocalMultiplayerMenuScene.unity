@@ -1468,6 +1468,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChipSelector
       objectReference: {fileID: 0}
+    - target: {fileID: 8689801190283663156, guid: 72aee6c8168bf064cb8f5d496eb6ab12, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72aee6c8168bf064cb8f5d496eb6ab12, type: 3}
 --- !u!1001 &7733007520252639855
