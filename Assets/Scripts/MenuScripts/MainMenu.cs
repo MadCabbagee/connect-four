@@ -3,11 +3,12 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace UIBehaviors
+namespace MenuScripts
 {
     public class MainMenu : MonoBehaviour
     {
-        public static GameMode GameMode;
+        
+        public static GameMode GameMode = GameMode.None;
 
         // Start is called before the first frame update
         private void Start()
@@ -22,14 +23,14 @@ namespace UIBehaviors
         public void SinglePlayerButton_OnClick()
         {
             GameMode = GameMode.SinglePlayer;
-            SwitchScene("GameScene");
+            SwitchScene("PlayerSetupScene");
         }
 
         public void MultiPlayerButton_OnClick()
         {
             SwitchScene("MultiPlayerMenuScene");
         }
-
+        
         public void SettingsButton_OnClick()
         {
             SwitchScene("SettingsMenuScene");
