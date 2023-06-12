@@ -2,5 +2,6 @@
 {
     SinglePlayer,
     LocalMultiplayer,
-    OnlineMultiplayer
+    OnlineMultiplayer,
+    None
 }
