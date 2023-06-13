@@ -1,27 +1,51 @@
+using System;
+using MenuScripts;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace ChipScripts
 {
     public class ChipSelection : MonoBehaviour
     {
-            
-        public Transform chipIcon;
         private bool _isSelected = false;
+        private Transform _transform;
+        public string color;
+        private void Awake()
+        {
+            _transform = transform;
+        }
 
-        /// <summary>
-        ///     Enlarges image to indicate this chip is selected.
-        /// </summary>
+        private void OnMouseDown()
+        {
+            ToggleSelection();
+        }
+
         public void ToggleSelection()
         {
             Debug.Log("Mouse Down");
+
+            var parent = _transform.parent;
+            var siblingChips = parent.GetComponentsInChildren<ChipSelection>();
+
+            // Deselect all sibling chips
+            foreach (var chip in siblingChips)
+            {
+                if (chip != this && chip._isSelected)
+                {
+                    chip._isSelected = false;
+                    chip.transform.localScale /= 1.25f;
+                }
+            }
+
             _isSelected = !_isSelected;
+
             if (_isSelected)
             {
-                chipIcon.localScale *= 1.25f; // Increase scale when selected
+                _transform.localScale *= 1.25f; // Increase scale when selected
             }
             else
             {
-                chipIcon.localScale /= 1.25f; // Reset scale when deselected
+                _transform.localScale /= 1.25f; // Reset scale when deselected
             }
         }
     }

@@ -9,7 +9,9 @@ namespace MenuScripts
     {
         [SerializeField] private GameObject playerOneSettings;
         [SerializeField] private GameObject playerTwoSettings;
-
+        public static string PlayerOneSelection;
+        public static string PlayerTwoSelection;
+        
         private string _lastMenu;
         private void OnEnable()
         {
@@ -68,6 +70,7 @@ namespace MenuScripts
 
         public void PlayButton_OnClick()
         {
+            // todo: check that both players have chosen a chip and also have not chosen the same one.
             MainMenu.SwitchScene("GameScene");
         }
     }
